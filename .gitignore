@@ -8,3 +8,17 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Local agent/editor state
+.claude/
+.codex/
+.agents/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated artifacts (e2e notebook execution output, logs, etc.)
+artifacts/
+
+# uv cache (useful for restricted environments where ~/.cache is not writable)
+.uv-cache/
