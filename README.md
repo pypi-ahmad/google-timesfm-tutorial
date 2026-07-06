@@ -53,6 +53,20 @@ executed copy to `artifacts/`.
 ./scripts/run_e2e.sh
 ```
 
+## Local Tests
+
+Fast smoke test (minimal model load + tiny forecast):
+
+```bash
+./scripts/test.sh
+```
+
+Run the full notebook e2e (slow; downloads + kernel sockets required):
+
+```bash
+RUN_E2E=1 ./scripts/test.sh
+```
+
 Notes:
 - The notebook is written to run on CPU or GPU. GPU is recommended for speed.
 - The covariates step uses TimesFM's XReg mechanism and forces JAX onto CPU to avoid VRAM
